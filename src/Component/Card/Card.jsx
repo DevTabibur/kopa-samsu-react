@@ -12,6 +12,9 @@ const Card = (props) => {
                 <p>bullet: {bullet}</p>
                 <p>capacity: {capacity}</p>
                 <h2>Price: ${price}</h2>
+                <button className='btn-addToCart'>
+                    <p>Add to Cart</p>
+                </button>
             </div>
         </div>
     );
