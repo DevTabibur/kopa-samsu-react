@@ -2,15 +2,16 @@ import React from 'react';
 import './Card.css'
 
 const Card = (props) => {
-    const {id, img, price, action, bullet, capacity} = props;
+    const {id, name, img, price, action, bullet, capacity} = props.gun;
     return (
         <div className='cards-container'>
             <div className="card">
                 <img src={img} alt="gun__img" />
-                <p>Price: ${price}</p>
-                <p>action: {action}</p>
+                <h1>Name: {name}</h1>
+                <h5>Action: {action}</h5>
                 <p>bullet: {bullet}</p>
                 <p>capacity: {capacity}</p>
+                <h2>Price: ${price}</h2>
             </div>
         </div>
     );

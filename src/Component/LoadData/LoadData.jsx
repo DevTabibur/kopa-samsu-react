@@ -16,11 +16,7 @@ const LoadData = () => {
             {
                 guns.map(gun => <Card
                     key={gun.id}
-                    img={gun.img}
-                    price={gun.price}
-                    action={gun.action}
-                    bullet={gun.bullet}
-                    capacity={gun.capacity}
+                    gun={gun}
                 />)
             }
             
