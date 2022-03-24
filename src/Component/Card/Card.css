@@ -30,6 +30,12 @@
     left: 0;
     border-radius: 40px;
     transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-addToCart p{
+    margin-right: 10px;
 }
 .btn-addToCart:hover{
     color: aqua;
