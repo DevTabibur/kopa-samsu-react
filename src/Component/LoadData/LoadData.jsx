@@ -11,12 +11,17 @@ const LoadData = () => {
         .then(data => setGuns(data))
     }, [])
 
+    const handleAddToCart = (gun) => {
+        console.log(gun);
+    }
+
     return (
         <div className='template-grid'>
             {
                 guns.map(gun => <Card
                     key={gun.id}
                     gun={gun}
+                    handleAddToCart={handleAddToCart}
                 />)
             }
             
