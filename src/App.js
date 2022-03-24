@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import LoadData from './Component/LoadData/LoadData';
+import Navbar from './Component/NavBar/Navbar';
 
 function App() {
   return (
-    <>
-      <h1>Hello</h1>
-    </>
+    <div className='container'>
+     <Navbar/>
+     <LoadData/>
+    </div>
   );
 }
 
