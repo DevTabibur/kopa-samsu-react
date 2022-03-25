@@ -11,12 +11,20 @@ const LoadData = () => {
         .then(data => setGuns(data))
     }, [])
 
+    // for Add to Cart btn..  it,s a child to parent props arrow function
+    const [cart, setCarts] = useState([]);
     const handleAddToCart = (gun) => {
-        console.log(gun);
+        const newCart = [...cart ,gun];
+        setCarts(newCart);
     }
 
     return (
+        <>
+        {
+            cart.map(item => <h1 key={item.id}>{item.name}</h1>)
+        }
         <div className='template-grid'>
+        
             {
                 guns.map(gun => <Card
                     key={gun.id}
@@ -26,6 +34,7 @@ const LoadData = () => {
             }
             
         </div>
+        </>
     );
 };
 
